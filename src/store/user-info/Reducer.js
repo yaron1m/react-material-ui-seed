@@ -1,13 +1,19 @@
-import {SAMPLE_ACTION_TYPE} from "./ActionTypes";
+import {UPDATE_NAME} from "./ActionTypes";
 
-const initialState = {};
+const initialState = {
+    name: null,
+};
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case SAMPLE_ACTION_TYPE:
+        case UPDATE_NAME:
             return Object.assign({}, action.payload);
 
         default:
             return state;
     }
+}
+
+export function getName(state){
+    return state.userInfo.name;
 }
