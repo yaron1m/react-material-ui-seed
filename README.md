@@ -12,3 +12,21 @@ This is a seed for a simple react app with the following capabilities:
 * Routes
 * Material-UI
 * ESLint
+
+## Getting started
+
+To start your new app, first clone this project:
+```bash
+$ git clone --depth=1 https://github.com/yaron1m/react-material-ui-seed.git <my-project-name>
+$ cd <my-project-name>
+```
+
+Then, install the project dependencies:
+```bash
+$ npm install
+```
+
+To run the app, use:
+```bash
+$ npm start
+```
