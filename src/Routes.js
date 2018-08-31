@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import HomePageContainer from "./pages/home-page/HomePageContainer";
 
-export default () => {
+export default function Routes() {
     return (
         <Router>
             <div>
