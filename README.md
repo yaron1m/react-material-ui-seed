@@ -13,6 +13,9 @@ This is a seed for a simple react app with the following capabilities:
 * Material-UI
 * ESLint
 
+## Live demo:
+[Here](https://react-redux-material-seed.firebaseapp.com)
+
 ## Getting started
 
 To start your new app, first clone this project:
