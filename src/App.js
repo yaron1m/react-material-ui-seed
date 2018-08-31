@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import HomePageContainer from "./pages/home-page/HomePageContainer";
 import Header from "./Header";
+import Routes from "./Routes";
 
 class App extends Component {
     render() {
@@ -8,7 +8,7 @@ class App extends Component {
             <div style={{textAlign: "center"}}>
                 <Header/>
 
-                <HomePageContainer/>
+                <Routes/>
             </div>
         );
     }
