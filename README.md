@@ -39,6 +39,35 @@ $ npm start
 ```
 The app will start at [http://localhost:3000](http://localhost:3000)
 
+## Project structure
+```
+.
+├── public                             # Static files for running the app
+│   ├── index.html                # Base HTML file with div replaced by app
+│   └── favicon.ico               # App icon, you may want to replace this
+├── src                           # Source code
+│   ├── header                    #
+│   │   ├── Header.js             # Blue app header component
+│   │   └── LeftDrawer.js         # App left drawer, opened from header menu button
+│   ├── pages                     #
+│   │   ├── AboutPage.js          # Simple about page, rendered when navigating to '/about'
+│   │   ├── HomePage.js           # App home page, displaying text box and message
+│   │   └── HomePageContainer.js  # Connecting HomePage.js to the redux store
+│   ├── store                     #
+│   │   ├── index.js              # Creating the redux store with combineReducers and thunk
+│   │   └── user-info             # Sample reducer
+│   │       ├── Actions.js        # Handling UPDATE_NAME actions
+│   │       ├── ActionTypes.js    # Defining user-info reducer action types
+│   │       └── Reducer.js        # Reducer for user-info, holding the user name and selectors
+│   ├── App.js                    # Displaying the header and app content
+│   ├── Routes.js                 # Managing app routes
+│   ├── index.css                 # App body css, setting the margin and background color
+│   └── index.js                  # App entry point, creating redux store
+├── .eslintrc.js                  # Configuration file for ESLint
+├── .travis.yml                   # Configuration file for TravisCI
+└── package.json                  # Project information and dependencies.
+```
+
 ## Author
 **Yaron Malin** - [LinkedIn](https://www.linkedin.com/in/yaron-malin/)
 
