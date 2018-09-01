@@ -42,7 +42,7 @@ The app will start at [http://localhost:3000](http://localhost:3000)
 ## Project structure
 ```
 .
-├── public                             # Static files for running the app
+├── public                        # Static files for running the app
 │   ├── index.html                # Base HTML file with div replaced by app
 │   └── favicon.ico               # App icon, you may want to replace this
 ├── src                           # Source code
