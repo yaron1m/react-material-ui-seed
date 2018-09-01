@@ -7,14 +7,18 @@
 [![License: MIT](https://img.shields.io/badge/licence-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 This is a seed for a simple react app with the following capabilities:
-* Single page react application
-* Redux store
-* Routes
-* Material-UI
-* ESLint
+* [create-react-app](https://github.com/facebook/create-react-app)
+* [react-redux](https://github.com/reduxjs/react-redux)
+* [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
+* [material-ui](https://material-ui.com)
+* [ESLint](https://eslint.org/)
 
 ## Live demo:
-[Here](https://yaron1m.github.io/react-material-ui-seed/)
+See [here](https://yaron1m.github.io/react-material-ui-seed/).
+
+## Requirements
+* node `^5.0.0`
+* npm `^3.0.0`
 
 ## Getting started
 
@@ -33,3 +37,11 @@ To run the app, use:
 ```bash
 $ npm start
 ```
+The app will start at [http://localhost:3000](http://localhost:3000)
+
+## Author
+**Yaron Malin** - [LinkedIn](https://www.linkedin.com/in/yaron-malin/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
