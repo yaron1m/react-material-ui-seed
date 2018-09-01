@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Header from "./Header";
+import Header from "./header/Header";
 import PropTypes from "prop-types";
 
 export default class App extends Component {
@@ -15,5 +15,5 @@ export default class App extends Component {
 }
 
 App.propTypes = {
-    children: PropTypes.element,
+    children: PropTypes.any,
 };
