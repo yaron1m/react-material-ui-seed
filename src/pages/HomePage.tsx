@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import TextField from "@material-ui/core/TextField";
 
-export default function HomePage(props) {
+export default function HomePage(props: HomePageProps) {
     const title = props.name ? "Welcome " + props.name + "!" : "Please enter your name:";
 
     return (
@@ -21,7 +20,7 @@ export default function HomePage(props) {
     )
 }
 
-HomePage.propTypes = {
-    name: PropTypes.string,
-    updateName: PropTypes.func.isRequired,
-};
+interface HomePageProps {
+    name: string;
+    updateName: (newName: string) => void;
+}

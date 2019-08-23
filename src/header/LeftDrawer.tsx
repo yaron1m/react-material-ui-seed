@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -7,7 +6,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-import {withRouter} from "react-router-dom";
+import {redirect} from "../util/HistoryUtil";
 
 const styles = {
     list: {
@@ -15,7 +14,7 @@ const styles = {
     }
 };
 
-function LeftDrawer(props) {
+function LeftDrawer(props: LeftDrawerProps) {
     return (
         <Drawer open={props.open} onClose={props.onClose}>
             <div
@@ -25,13 +24,13 @@ function LeftDrawer(props) {
             >
                 <div style={styles.list}>
                     <List>
-                        <ListItem button onClick={() => props.history.push("/")}>
+                        <ListItem button onClick={() => redirect("/")}>
                             <ListItemIcon>
                                 <HomeIcon/>
                             </ListItemIcon>
                             <ListItemText primary="Homepage"/>
                         </ListItem>
-                        <ListItem button onClick={() => props.history.push("/about")}>
+                        <ListItem button onClick={() => redirect("/about")}>
                             <ListItemIcon>
                                 <InfoIcon/>
                             </ListItemIcon>
@@ -44,10 +43,9 @@ function LeftDrawer(props) {
     )
 }
 
-LeftDrawer.propTypes = {
-    history: PropTypes.object.isRequired,
-    open: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-};
+interface LeftDrawerProps {
+    open: boolean;
+    onClose: () => void;
+}
 
-export default withRouter(LeftDrawer);
+export default LeftDrawer;

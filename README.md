@@ -47,22 +47,22 @@ The app will start at [http://localhost:3000](http://localhost:3000)
 │   └── favicon.ico               # App icon, you may want to replace this
 ├── src                           # Source code
 │   ├── header                    # App header and navigation drawer
-│   │   ├── Header.js             # Blue app header component
-│   │   └── LeftDrawer.js         # App left drawer, opened from header menu button
+│   │   ├── Header.tsx            # Blue app header component
+│   │   └── LeftDrawer.tsx        # App left drawer, opened from header menu button
 │   ├── pages                     # App pages
-│   │   ├── AboutPage.js          # Simple about page, rendered when navigating to '/about'
-│   │   ├── HomePage.js           # App home page, displaying text box and message
-│   │   └── HomePageContainer.js  # Connecting HomePage.js to the redux store
+│   │   ├── AboutPage.tsx         # Simple about page, rendered when navigating to '/about'
+│   │   ├── HomePage.tsx          # App home page, displaying text box and message
+│   │   └── HomePageContainer.ts  # Connecting HomePage.tsx to the redux store
 │   ├── store                     # Redux store
-│   │   ├── index.js              # Creating the redux store with combineReducers and thunk
+│   │   ├── index.ts              # Creating the redux store with combineReducers and thunk
 │   │   └── user-info             # Sample reducer
-│   │       ├── Actions.js        # Handling UPDATE_NAME actions
-│   │       ├── ActionTypes.js    # Defining user-info reducer action types
-│   │       └── Reducer.js        # Reducer for user-info, holding the user name and selectors
-│   ├── App.js                    # Displaying the header and app content
-│   ├── Routes.js                 # Managing app routes
+│   │       ├── Actions.ts        # Handling UPDATE_NAME actions
+│   │       ├── ActionTypes.ts    # Defining user-info reducer action types
+│   │       └── Reducer.ts        # Reducer for user-info, holding the user name and selectors
+│   ├── App.tsx                   # Displaying the header and app content
+│   ├── Routes.tsx                # Managing app routes
 │   ├── index.css                 # App body css, setting the margin and background color
-│   └── index.js                  # App entry point, creating redux store
+│   └── index.ts                  # App entry point, creating redux store
 ├── .eslintrc.js                  # Configuration file for ESLint
 ├── .travis.yml                   # Configuration file for TravisCI
 └── package.json                  # Project information and dependencies.

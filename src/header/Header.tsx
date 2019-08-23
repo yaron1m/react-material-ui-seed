@@ -13,7 +13,7 @@ const styles = {
         marginBottom: 20,
     },
     title: {
-        textAlign: "left",
+        textAlign: "left" as "left",
         flexGrow: 1,
     },
     menuButton: {
@@ -27,7 +27,7 @@ export default class Header extends React.Component {
         drawerOpen: false,
     };
 
-    changeDrawer = (open) => () => {
+    changeDrawer = (open: boolean) => () => {
         this.setState({
             drawerOpen: open,
         })

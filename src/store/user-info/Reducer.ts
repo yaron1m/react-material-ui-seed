@@ -1,10 +1,11 @@
 import {UPDATE_NAME} from "./ActionTypes";
+import {IState} from "../IState";
 
 const initialState = {
     name: null,
 };
 
-export default (state = initialState, action) => {
+export default (state = initialState, action: any) => {
     switch (action.type) {
         case UPDATE_NAME:
             return Object.assign({}, {
@@ -16,6 +17,6 @@ export default (state = initialState, action) => {
     }
 }
 
-export function getName(state) {
+export function getName(state: IState) {
     return state.userInfo.name;
 }
