@@ -46,7 +46,7 @@ export default class Header extends React.Component {
                         >
                             <MenuIcon/>
                         </IconButton>
-                        <Typography variant="title" color="inherit" style={styles.title}>
+                        <Typography color="inherit" style={styles.title}>
                             My App
                         </Typography>
                         <Button color="inherit">Login</Button>
